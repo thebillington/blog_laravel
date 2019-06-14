@@ -1,9 +1,9 @@
 @extends('layout/base-layout')
 
-@section('page-title', 'Home Page')
+@section('page-title', 'About Page')
 
 @section('page-content')
 
-	<p>Index</p>
+	<p>About</p>
     
 @endsection
