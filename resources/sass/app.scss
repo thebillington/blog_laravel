@@ -16,6 +16,7 @@ a {
 	position: fixed;
 	width: 100%;
 	height: 25%;
+	z-index: 1;
 	
 	#topImgContainer {
 
@@ -31,45 +32,44 @@ a {
 
 	}
 
-	#navBar {
-
-		position: relative;
-		width: 100%;
-		height: 20%;
+	.orange-bg {
 		background-color: #EE8434;
-		text-align: center;
+	}
 
-		img.logo {
+	#navContainer {
 
-			position: absolute;
-			height: 90%;
-			padding: 10px;
-			left: 20px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		color: #FFF;
 
-		}
+		.container {
 
-		ul {
+			.navbar {
 
-			position: absolute;
-			width: 100%;
-			height: 1005;
-			text-align: center;
+				.navbar-brand {
 
-			li {
+					margin-right: 40px;
+					
+				}
 
-				position: relative;
-				padding: 15px;
-				display: inline-block;
-				list-style-type: none;
-				font-size: 1.5rem;
-				color: white;
+				.nav-item {
 
-			}
+					margin-left: 10px;
 
-			li:hover {
+				}
 
-				background-color: #C95D63;
-				cursor: pointer;
+				.nav-item:hover {
+
+					cursor: pointer;
+
+				}
+
+				img.logo {
+
+					height: 50px;
+
+				}
 
 			}
 
@@ -83,20 +83,46 @@ a {
 
 	position: fixed;
 	top: 25%;
-	height: 70%;
 	width: 100%;
+	height: 70%;
 	overflow-y: scroll;
 
 	#contentScroll {
 
-		position: relative;
-		margin-left: auto;
-		margin-right: auto;
-		width: 70%;
-		background-color: #8D80AD;
-		color: #FFF;
-		min-height: 100%;
-		padding: 50px;
+		#content {
+
+			position: relative;
+			float: left;
+			background-color: #85E077;
+			color: #694D4D;
+			padding: 50px;
+			text-align: justify;
+			width: 65%;
+
+			margin-top: 50px;
+			margin-bottom: 50px;
+
+			h1,h2,h3,h4,h5,h6,p {
+
+				margin-bottom: 30px;
+
+			}
+
+		}
+
+		#sidebar {
+
+			margin-top: 50px;
+			margin-bottom: 50px;
+
+			position: relative;
+			float: right;
+			width: 30%;
+			background-color: #85E077;
+			color: #694D4D;
+			min-height: 800px;
+
+		}
 
 	}
 

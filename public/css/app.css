@@ -10654,6 +10654,7 @@ a {
   position: fixed;
   width: 100%;
   height: 25%;
+  z-index: 1;
 }
 
 #header #topImgContainer {
@@ -10669,59 +10670,72 @@ a {
      object-fit: cover;
 }
 
-#header #navBar {
-  position: relative;
-  width: 100%;
-  height: 20%;
+#header .orange-bg {
   background-color: #EE8434;
-  text-align: center;
 }
 
-#header #navBar img.logo {
+#header #navContainer {
   position: absolute;
-  height: 90%;
-  padding: 10px;
-  left: 20px;
-}
-
-#header #navBar ul {
-  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 1005;
-  text-align: center;
+  color: #FFF;
 }
 
-#header #navBar ul li {
-  position: relative;
-  padding: 15px;
-  display: inline-block;
-  list-style-type: none;
-  font-size: 1.5rem;
-  color: white;
+#header #navContainer .container .navbar .navbar-brand {
+  margin-right: 40px;
 }
 
-#header #navBar ul li:hover {
-  background-color: #C95D63;
+#header #navContainer .container .navbar .nav-item {
+  margin-left: 10px;
+}
+
+#header #navContainer .container .navbar .nav-item:hover {
   cursor: pointer;
+}
+
+#header #navContainer .container .navbar img.logo {
+  height: 50px;
 }
 
 #contentWrapper {
   position: fixed;
   top: 25%;
-  height: 70%;
   width: 100%;
+  height: 70%;
   overflow-y: scroll;
 }
 
-#contentWrapper #contentScroll {
+#contentWrapper #contentScroll #content {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  background-color: #8D80AD;
-  color: #FFF;
-  min-height: 100%;
+  float: left;
+  background-color: #85E077;
+  color: #694D4D;
   padding: 50px;
+  text-align: justify;
+  width: 65%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#contentWrapper #contentScroll #content h1,
+#contentWrapper #contentScroll #content h2,
+#contentWrapper #contentScroll #content h3,
+#contentWrapper #contentScroll #content h4,
+#contentWrapper #contentScroll #content h5,
+#contentWrapper #contentScroll #content h6,
+#contentWrapper #contentScroll #content p {
+  margin-bottom: 30px;
+}
+
+#contentWrapper #contentScroll #sidebar {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  float: right;
+  width: 30%;
+  background-color: #85E077;
+  color: #694D4D;
+  min-height: 800px;
 }
 
 #footer {
